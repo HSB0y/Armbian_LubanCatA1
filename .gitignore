@@ -6,17 +6,14 @@ ubuntu-*-cloudimg-console.log
 .ignore_changes
 
 ### compile configurations added by users
-/config-*.conf
+
 ### but not default (supplied) files
-!/config-docker.conf
-!/config-vagrant.conf
+
 
 ### output directories
 /.tmp/
 /output/
 /cache/
-/*userpatches*/
-/userpatches
 
 ### General annoyances ###
 .DS_Store
