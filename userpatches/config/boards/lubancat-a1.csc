@@ -16,7 +16,12 @@ FORCE_BOOTSCRIPT_UPDATE="yes"
 # Onboard AIC8800 SDIO WiFi/BT (SDIO WiFi + UART Bluetooth on ttyS1)
 AIC8800_TYPE="sdio"
 enable_extension "radxa-aic8800"
-PACKAGE_LIST_BOARD="rfkill bluetooth bluez bluez-tools"
+PACKAGE_LIST_BOARD="rfkill bluetooth bluez bluez-tools mesa-opencl-icd mesa-vulkan-drivers ocl-icd-libopencl1 clinfo"
+
+# Enable the H616/H618 internal analog codec driver (3.5mm Line Out).
+enable_extension "lubancat-a1-audio"
+# Enable rusticl (Mesa OpenCL) on panfrost.
+enable_extension "lubancat-a1-graphics"
 
 # AIC8800 Wireless kernel-module options
 function post_family_tweaks_bsp__aic8800_wireless() {

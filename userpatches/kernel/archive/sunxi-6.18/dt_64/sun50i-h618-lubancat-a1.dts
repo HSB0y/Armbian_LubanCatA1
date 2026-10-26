@@ -89,6 +89,11 @@
 	status = "okay";
 };
 
+/* AHUB hardware-mix card; required for HDMI audio routing/clocking. */
+&ahub_dam_mach {
+	status = "okay";
+};
+
 &ahub1_plat {
 	status = "okay";
 };
