@@ -18,7 +18,7 @@ The framework supports **native**, **cross**, and **containerized** builds for m
 ```bash
 git clone https://github.com/armbian/build
 cd build
-./compile.sh
+./compile.sh build BOARD=lubancat-a1 BRANCH=current RELEASE=trixie BUILD_DESKTOP=yes BUILD_MINIMAL=no DESKTOP_ENVIRONMENT=xfce DESKTOP_TIER=mid KERNEL_CONFIGURE=no
 ```
 
 <a href="#how-to-build-an-image-or-a-kernel"><img src=".github/README.gif" alt="Build demonstration" width="100%"></a>
